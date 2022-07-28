@@ -9,7 +9,7 @@ img_url = 'https://pbs.twimg.com/profile_banners/1278607777791750144/1600913901/
 
 im = imread(img_url)
 
-st.image(im, caption='image from wikimedia commons',
+st.image(im, caption='image from koromoo twitter ',
          use_column_width=True)
 
 
