@@ -7,7 +7,7 @@ from skimage.io import imread
 # download the image
 img_url = 'https://pbs.twimg.com/profile_banners/1278607777791750144/1600913901/600x200'
 
-im = imread(img_url)
+im = imread(img_url);
 
 st.image(im, caption='image from koromoo twitter ',
          use_column_width=True)
@@ -20,7 +20,7 @@ hist_blue, _ = np.histogram(im[:, :, 2], bins=64)
 hist = np.stack((hist_red, hist_green, hist_blue), axis=1)
 
 df_hist = pd.DataFrame(hist, columns=['R', 'G', 'B'])
-st.bar_chart(df_hist)
+st.bar_chart(df_hist);
 
 
 # choose one color
